@@ -9,10 +9,9 @@ When we've completed this Code Pattern, you will understand how to:
 
 - **Objective 1**: configuration ldap server
 - **Objective 2**: How to set up an authority server that accepts certification requests, creates them, then signs them in order to verify their state
-- **Objective 3**: 
+- **Objective 3**: how to connect ldap with clients and generate certificate
 ## Flow
 
-When thinking of chatroom capabilities, our elegant application you will need the following set of features:
 
 1- **Client side :**
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Register -> Enter credentials (first time)
@@ -37,7 +36,6 @@ When thinking of chatroom capabilities, our elegant application you will need th
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Demo architecture](https://i.ibb.co/zx75pzD/arch.png)
 
-![Demo encryption](https://github.com/khalilMejri/TalkyWalky/blob/master/docs/Annotation%202020-01-23%20214852.png)
 
 
 ## Features:
@@ -58,9 +56,9 @@ When thinking of chatroom capabilities, our elegant application you will need th
 
 ## Dependencies
 
-- [RabbitMQ](https://github.com/khalilMejri/TalkyWalky): Messaging Broker based on AMQP protocol
-- [pycryptodome](https://github.com/khalilMejri/TalkyWalky): well-documented python library for encryption/decryption..
-- [OpenSSL](https://github.com/khalilMejri/TalkyWalky): a python package that provides a high-level interface to the functions in the OpenSSL library such as X509 certs generation.
+- [RabbitMQ]([https://github.com/LeminIkhalih/projet](https://github.com/LeminIkhalih/projet)y): Messaging Broker based on AMQP protocol
+- [pycryptodome][(https://github.com/LeminIkhalih/projet](https://github.com/LeminIkhalih/projet)): well-documented python library for encryption/decryption..
+-(https://github.com/LeminIkhalih/projet)](https://github.com/LeminIkhalih/projet)): a python package that provides a high-level interface to the functions in the OpenSSL library such as X509 certs generation.
 - [Tkinter](https://github.com/LeminIkhalih/projet): Standard Python interface to the Tk GUI toolkit.
 - [cryptography](https://github.com/LeminIkhalih/projet): python library for X509 certs with good API
 - [OpenLDAP](https://github.com/LeminIkhalih/projet): is an implementation under ubuntu for LDAP protocol
@@ -92,13 +90,7 @@ $pip install cryptography
 $pip install python-ldap
 ```
 
-### 2. Run rabbitMQ service
-
-```bash
-
-```
-
-You can now connect to `ldap:<ur_ldap_host_address>:389` to start chatting.
+m
 
 ### Refs
 
