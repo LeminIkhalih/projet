@@ -66,9 +66,6 @@ When thinking of chatroom capabilities, our elegant application you will need th
 - [OpenLDAP](https://github.com/LeminIkhalih/projet): is an implementation under ubuntu for LDAP protocol
 - [Pika](https://github.com/LeminIkhalih/projet): Rabbitmq python client.
 
-## Watch the Video
-
-[![](https://i.ibb.co/SvDjbvZ/Annotation-2020-01-24-005326.png)](https://drive.google.com/open?id=1h2x8_4kPlm4656Bjh0Pp3KeyIaOd_f4f)
 
 ## Setup
 
@@ -78,7 +75,7 @@ You have multiple options to setup your own instance:
 
 ### 1. Open LDAP server in your machine
 
-Clone the `TalkyWaly` repository locally. In a terminal, run:
+Clone the `LeminIkhalih/projet` repository locally. In a terminal, run:
 
 ```bash
 $ git clone https://github.com//LeminIkhalih/projet.git
@@ -90,7 +87,9 @@ $ git clone https://github.com//LeminIkhalih/projet.git
 
 ```bash
 # install node modules for the API
-$ pip install -r requirements.txt --no-index --find-links file:///tmp/packages
+$pip install pycrytodome
+$pip install cryptography
+$pip install python-ldap
 ```
 
 ### 2. Run rabbitMQ service
