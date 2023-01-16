@@ -31,11 +31,7 @@ When we've completed this Code Pattern, you will understand how to:
 - Login user :
   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Enter credentials -> verify user in the active directory via LDAP
   <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Verify the signature via authority server
-- Chatting :
-  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Encrypt /decrypt messages while exchanging them between clients
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Demo architecture](https://i.ibb.co/zx75pzD/arch.png)
-
+:
 
 
 ## Features:
