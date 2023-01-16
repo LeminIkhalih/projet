@@ -1,17 +1,15 @@
-# Python-Secure-Chatroom
+#application de chat messagerie
 
 ## About
 
-A chatroom application written in Python using TKinter & based on RabbitMQ broker using open-LDAP for authentication
 
 ## Learning objectives
 
 When we've completed this Code Pattern, you will understand how to:
 
-- **Objective 1**: LDAP server configuration, helping us manage user authentication.
+- **Objective 1**: configuration ldap server
 - **Objective 2**: How to set up an authority server that accepts certification requests, creates them, then signs them in order to verify their state
-- **Objective 3**: How to use RabbitMQ for chatting, which is an enterprise level tool.
-
+- **Objective 3**: 
 ## Flow
 
 When thinking of chatroom capabilities, our elegant application you will need the following set of features:
@@ -63,10 +61,10 @@ When thinking of chatroom capabilities, our elegant application you will need th
 - [RabbitMQ](https://github.com/khalilMejri/TalkyWalky): Messaging Broker based on AMQP protocol
 - [pycryptodome](https://github.com/khalilMejri/TalkyWalky): well-documented python library for encryption/decryption..
 - [OpenSSL](https://github.com/khalilMejri/TalkyWalky): a python package that provides a high-level interface to the functions in the OpenSSL library such as X509 certs generation.
-- [Tkinter](https://github.com/khalilMejri/TalkyWalky): Standard Python interface to the Tk GUI toolkit.
-- [cryptography](https://github.com/khalilMejri/TalkyWalky): python library for X509 certs with good API
-- [OpenLDAP](https://github.com/khalilMejri/TalkyWalky): is an implementation under ubuntu for LDAP protocol
-- [Pika](https://github.com/khalilMejri/TalkyWalky): Rabbitmq python client.
+- [Tkinter](https://github.com/LeminIkhalih/projet): Standard Python interface to the Tk GUI toolkit.
+- [cryptography](https://github.com/LeminIkhalih/projet): python library for X509 certs with good API
+- [OpenLDAP](https://github.com/LeminIkhalih/projet): is an implementation under ubuntu for LDAP protocol
+- [Pika](https://github.com/LeminIkhalih/projet): Rabbitmq python client.
 
 ## Watch the Video
 
@@ -83,27 +81,10 @@ You have multiple options to setup your own instance:
 Clone the `TalkyWaly` repository locally. In a terminal, run:
 
 ```bash
-$ git clone https://github.com/khalilmejri/talkywalky.git
+$ git clone https://github.com//LeminIkhalih/projet.git
 ```
 
-Our application would have the following folder structure:
 
-```bash
- TalkyWalky/
-   └── CA/
-     ├── ...
-     ├── ca_server.py
-     ├── ...
-     └── certificate_ca.pem
-   ├── ...
-   ├── server.py
-   ├── main.py
-   ├── chat.py
-   ├── requirements.txt
-   ├── ...
-   └── client_cert.pem
-
-```
 
 **Installation**
 
@@ -115,30 +96,7 @@ $ pip install -r requirements.txt --no-index --find-links file:///tmp/packages
 ### 2. Run rabbitMQ service
 
 ```bash
-$ systemctl service rabbitmq start
-```
 
-### 3. Create an Instance of Messaging-server
-
-```bash
-$ ./server.py
-```
-
-### 4. Create an Instance of Authority-server
-
-```bash
-$ ./CA/ca_server.py
-```
-
-**Get your ldap domain string. Almost all your servers need it; keep it safe!**
-
-### 5. Run
-
-Finally, start the main app enjoy :)
-
-```bash
-# start app client
-$ ./main.py
 ```
 
 You can now connect to `ldap:<ur_ldap_host_address>:389` to start chatting.
