@@ -1,0 +1,6 @@
+dn: cn=oumar,ou=groups,dc=tek-up,dc=de
+	objectClass: posixGroup
+	cn: oumar
+	gidNumber: 3000
+	memberUid: oumar
+

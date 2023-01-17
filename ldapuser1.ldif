@@ -1,0 +1,12 @@
+cn: uid=oumar,ou=people,dc=de,dc=de
+	objectClass: inetOrgPerson
+	objectClass: posixAccount
+	objectClass: shadowAccount
+	cn: oumar
+	sn:oumar
+	userPassword:{SSHA}ZUPp3jhAHzMZsE3BLPgiqRDgpgQH2Zei
+	loginShell: /bin/bash
+	homeDirectory: /home/oumar
+	uidNumber: 3000
+	gidNumber: 3000
+

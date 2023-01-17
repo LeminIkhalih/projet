@@ -26,9 +26,11 @@ class LoginPage:
         else:
         #    print(self.USERNANE.get())
         #    print(self.PASSWORD.get())
-           ldap_s = LdapService(admin_pwd="admin_motdepasse")
-           result = ldap_s.login(username=self.entry_1.get(),
-                                  password=self.entry_2.get())
+
+
+           ldap_s = LdapService(admin_pwd="li")
+           result = ldap_s.login(username="lemin",
+                                  password="lo")
            if not result:
                 client = CaClient(self.USERNAME)
                 client.connect()

@@ -12,7 +12,7 @@ class LdapService():
 
     # domaine d'admin
     LDAP_ADMIN_DN = "cn=admin,dc=tek-up,dc=de"
-    LDAP_ADMIN_PWD = ""
+    LDAP_ADMIN_PWD = "li"
 
     def __init__(self, admin_pwd):
         self.LDAP_ADMIN_PWD = admin_pwd
@@ -32,13 +32,27 @@ class LdapService():
                 ",ou=" + self.ldap_ou + ",dc=tek-up,dc=de"
 
         # start connection
-        ldap_client = ldap.initialize(self.ldap_server)
+        
+        try:
+        	print(self.ldap_server)
+        	ldap_client = ldap.initialize(self.ldap_server)
         # search for specific user
-        search_filter = "cn=" + self.username
+        
+        except ldap.LDAPError as e:
+           # LOG.debug('(ldap_connect) LDAP Erro : %s : Type %s ' %s (str(e), type(e)))
+           print("###############################################" + str(e)) 
+           print(type(e))
+           search_filter = "cn=" + self.username
+
 
         try:
             # if authentication successful, get the full user data
-            ldap_client.bind_s(user_dn, self.password)
+            #ldap_client.bind_s(user_dn, self.password)
+            ldap_client.simple_bind_s(user_dn, self.password)
+            #except plus
+       # except ldap.LDAPError as e:
+          # LOG.debug('(ldap_connect) LDAP Erro : %s : Type %s ' %s (str(e), type(e)))
+           #test
             result = ldap_client.search_s(
                 LDAP_BASE_DN, ldap.SCOPE_SUBTREE, search_filter)
 

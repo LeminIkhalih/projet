@@ -1,0 +1,5 @@
+dn: cn=lemin,ou=groups,dc=tek-up,dc=de
+	objectClass: posixGroup
+	cn: oumar
+	gidNumber: 1000
+	memberUid: lemin

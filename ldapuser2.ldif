@@ -1,0 +1,12 @@
+cn: uid=lemin,ou=people,dc=de,dc=de
+	objectClass: inetOrgPerson
+	objectClass: posixAccount
+	objectClass: shadowAccount
+	cn: lemin
+	sn:lemin
+	userPassword:{SSHA}ZUPp3jhAHzMZsE3BLPgiqRDgpgQH2Zei
+	loginShell: /bin/bash
+	homeDirectory: /home/lemin
+	uidNumber: 1000
+	gidNumber: 1000
+
