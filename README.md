@@ -52,7 +52,6 @@ When we've completed this Code Pattern, you will understand how to:
 
 ## Dependencies
 
-- [RabbitMQ]([https://github.com/LeminIkhalih/projet](https://github.com/LeminIkhalih/projet)y): Messaging Broker based on AMQP protocol
 - [pycryptodome][(https://github.com/LeminIkhalih/projet](https://github.com/LeminIkhalih/projet)): well-documented python library for encryption/decryption..
 -(https://github.com/LeminIkhalih/projet)](https://github.com/LeminIkhalih/projet)): a python package that provides a high-level interface to the functions in the OpenSSL library such as X509 certs generation.
 - [Tkinter](https://github.com/LeminIkhalih/projet): Standard Python interface to the Tk GUI toolkit.
